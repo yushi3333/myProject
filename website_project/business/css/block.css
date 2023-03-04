@@ -1,0 +1,24 @@
+
+.wrapper {
+    width:1200px;
+    margin:auto;
+}
+
+.ib {
+    display:inline-block;
+    margin: 1px;
+}
+
+.i1 {
+    width:1150px;
+    
+}
+.i2 {
+    width:595px;
+}
+.i3 {
+    width:375px
+}
+.i4 {
+    width:230px;
+}

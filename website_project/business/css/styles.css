@@ -1,0 +1,45 @@
+.banner{
+    text-align: center;
+    width:100%;
+   
+}
+.top{
+    text-align: center;
+    
+    
+}
+#wrapper{
+    margin-left:0px;
+    margin-right:0px;
+    width:100%;
+}
+html, body {
+    margin: 0;
+    padding:0;
+}
+.item, item-active{
+    height:450px;
+    width:100%;
+}
+body{
+    background-image: url('img/background.jpg');
+    background-position:fixed;
+}
+
+#message{
+   width: 400px;
+    
+    
+
+}
+#ss{
+    text-align: center;
+}
+
+#mmm{
+    
+    width:200px;
+}
+.backtotop{
+    text-align: center;
+}

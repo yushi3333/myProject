@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Contact|CarDreamer</title>
+        <link rel="stylesheet" type="text/css" href="css/block.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+         <link rel="stylesheet" href="css/styles-2.css"> 
+        <script type="text/javascript" src="js/valid.js"></script>
+        <script type="text/javascript" src="js/check.js"></script>
+        <link rel="icon" href="img/favicon.ico">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/modal.js"></script>
+        
+
+        <style>
+            body{
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                
+                
+                background-image: url('img/background.jpg')
+                
+   
+    
+    
+    
+}
+            background{
+                opacity:50%;
+            }
+            input:invalid{
+                border:2px solid red;
+            }
+        
+        
+        </style>
+        
+        
+       
+
+        
+        
+       
+   
+        
+        
+
+
+    </head>
+    
+    
+    <body>
+        
+         <div class="wrapper">
+             <a name="top"></a>
+        
+        
+        
+          
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#top">London CarDreamer</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+          
+        <li class="nav-item">
+            <a class="nav-link" href="reference.html">Reference</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Brands link
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://www.audi.ca/ca/web/en.html" target="_blank">Audi</a></li>
+            <li><a class="dropdown-item" href="https://www.bmw.ca/en/home.html" target="_blank">BMW</a></li>
+            <li><a class="dropdown-item" href="https://www.porsche.com/canada/ "target="_blank">Porsche</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        
+            <section class="top">
+                
+                <div> <img src="img/banner.jpg" class = "banner"></div>
+            
+            
+            </section>
+             
+ <form >
+  <div class="ib i1">
+    <label for="validationServer01" class="form-label">Name</label>
+    <input type="text" class="textbox" onblur="checkName();"id="name" value="" required>
+    
+  </div>
+ 
+  <div class="ib i2">
+    <label for="mail" >Email address</label>
+      <input type="email" name="mail" id="mail" required>
+   
+  </div>
+ 
+  <div class="ib i1">
+    <label for="validationServer04" class="form-label">Reason for message</label>
+    <select name = "one" onchange="if (this.value=='product'){this.form['other'].style.visibility='visible'}else {this.form['other'].style.visibility='hidden'};"class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer03Feedback" required>
+      <option selected disabled value="">Choose...</option>
+      <option>General inquiry</option>
+        <option>Pricing and bulk rates</option>
+        <option value="product" >product info</option>
+        <option>Shipping</option>
+        <option>Other</option>
+    </select>
+    <label for="validationServer04" class="form-label">Product ID(optional)
+        <input type="textbox" name="other" style="visibility:hidden;" id = "ids" onblur="checkID();"/></label>
+ 
+  </div>
+     
+     <div class="mb-3">
+    <label for="validationTextarea" class="form-label" >Message</label>
+         <input type = "textbox" id = "message" onblur="checkNum();"/>
+   
+   
+     </div>
+
+
+  <!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Send
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id = 'ss'>
+        Successfully sent message!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+             
+             
+             
+        </div>
+        
+        
+        
+        
+  <script>
+  const email = document.getElementById("mail");
+
+  email.addEventListener("input", function (event) {
+    if (email.validity.typeMismatch) {
+      email.setCustomValidity("I am expecting an e-mail address!");
+    } else {
+      email.setCustomValidity("");
+    }
+  });
+  </script>
+        
+        <script type="text/javascript" src="js/valid.js"></script>
+        
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+        
+    </body>
+    
+</html>
+             
